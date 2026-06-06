@@ -108,7 +108,32 @@ New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.codex\skills"
 Copy-Item -Recurse -Force skills\nature-comsol-simulation "$env:USERPROFILE\.codex\skills\"
 ```
 
-## Example prompts
+## Use Case Gallery
+
+These abbreviated examples show the skill's main value: it produces usable
+manuscript text while keeping unsupported simulation claims visible.
+
+| Use case | Input | What the skill highlights |
+|---|---|---|
+| [Solid-mechanics Results audit](examples/solid-mechanics-results-audit.md) | Stress/displacement contours for a porous implant, with displacement-only mesh convergence | Downgrades design-superiority and failure-resistance claims until stress convergence and compression validation are supplied |
+| [Contact-pressure reviewer response](examples/contact-pressure-reviewer-response.md) | Reviewer says pressure contours do not prove wear reduction | Separates pressure redistribution from wear validation and drafts a response strategy |
+| [Thermal-mechanical Methods checklist](examples/thermal-mechanical-methods-checklist.md) | Heat-transfer + solid-mechanics model with temperature convergence only | Flags that thermal-stress claims need stress-focused convergence and coupling assumptions |
+
+### Example output snippet
+
+```text
+Detected axes:
+simulation_domain=solid-mechanics;
+model_claim=stress-strain, deformation-displacement, optimization-design;
+artifact=results.
+
+Claim boundary:
+The model supports a bounded conclusion that the lattice geometry altered the
+simulated load-bearing response. A stronger claim of improved failure resistance
+requires stress-focused mesh convergence and compression-test validation.
+```
+
+## Quick prompts
 
 ```text
 Use nature-comsol-simulation to audit this COMSOL solid-mechanics Results section.
@@ -155,6 +180,10 @@ nature-comsol-simulation/
 ├── docs/
 │   ├── absorbed-and-rejected.md
 │   └── project-charter.md
+├── examples/
+│   ├── solid-mechanics-results-audit.md
+│   ├── contact-pressure-reviewer-response.md
+│   └── thermal-mechanical-methods-checklist.md
 ├── README.md
 ├── README-zh.md
 ├── install.md

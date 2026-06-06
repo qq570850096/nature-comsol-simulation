@@ -78,7 +78,31 @@ New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.codex\skills"
 Copy-Item -Recurse -Force skills\nature-comsol-simulation "$env:USERPROFILE\.codex\skills\"
 ```
 
-## 示例
+## 用例展示
+
+下面这些简短用例展示它和普通润色器的区别：它会给出可用文本，但不会掩盖仿真证据缺口。
+
+| 用例 | 输入 | skill 展示出的特色 |
+|---|---|---|
+| [固体力学 Results 审查](examples/solid-mechanics-results-audit.md) | 多孔植入物应力/位移云图，但只做了位移网格收敛 | 会降级“设计更优/失效风险更低”的 claim，要求补 stress convergence 和压缩实验验证 |
+| [接触压力审稿回复](examples/contact-pressure-reviewer-response.md) | 审稿人认为 pressure contour 不能证明 wear reduction | 区分 pressure redistribution 和 wear validation，并生成回复策略 |
+| [热-结构 Methods 清单](examples/thermal-mechanical-methods-checklist.md) | Heat Transfer + Solid Mechanics，只有温度收敛 | 指出 thermal-stress claim 需要 stress-focused convergence 和 coupling 假设说明 |
+
+### 输出片段示例
+
+```text
+Detected axes:
+simulation_domain=solid-mechanics;
+model_claim=stress-strain, deformation-displacement, optimization-design;
+artifact=results.
+
+Claim boundary:
+The model supports a bounded conclusion that the lattice geometry altered the
+simulated load-bearing response. A stronger claim of improved failure resistance
+requires stress-focused mesh convergence and compression-test validation.
+```
+
+## 快速调用示例
 
 ```text
 Use nature-comsol-simulation to audit this COMSOL solid-mechanics Results section.
