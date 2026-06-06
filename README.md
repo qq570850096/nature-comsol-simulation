@@ -13,6 +13,14 @@ general CAE agent. Its job is narrower and sharper: judge whether a simulation
 claim can survive peer review, then help write the manuscript without hiding the
 model's assumptions.
 
+## Visual Overview
+
+![Router architecture](assets/architecture-router.svg)
+
+![Use case output effect](assets/use-case-output.svg)
+
+![Reviewer-risk audit flow](assets/reviewer-risk-flow.svg)
+
 ## Why this exists
 
 Simulation papers often fail for reasons that polishing cannot fix:
@@ -180,6 +188,10 @@ nature-comsol-simulation/
 ├── docs/
 │   ├── absorbed-and-rejected.md
 │   └── project-charter.md
+├── assets/
+│   ├── architecture-router.svg
+│   ├── use-case-output.svg
+│   └── reviewer-risk-flow.svg
 ├── examples/
 │   ├── solid-mechanics-results-audit.md
 │   ├── contact-pressure-reviewer-response.md

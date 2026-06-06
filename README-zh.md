@@ -6,6 +6,14 @@
 
 它不是 COMSOL 求解器，不是 GUI 自动化工具，也不是泛化 CAE agent。它的目标更窄：**判断仿真 claim 是否经得住审稿，并把模型假设、数值可信度和论文表达绑定起来。**
 
+## 视觉展示
+
+![Router architecture](assets/architecture-router.svg)
+
+![Use case output effect](assets/use-case-output.svg)
+
+![Reviewer-risk audit flow](assets/reviewer-risk-flow.svg)
+
 ## 为什么要单独做这个项目
 
 仿真论文常见问题不是语言不好，而是模型证据不够支撑 claim：

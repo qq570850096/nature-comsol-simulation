@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">nature-comsol-simulation router architecture</title>
+  <desc id="desc">Architecture diagram showing GitHub lessons, subtraction gate, router axes, loaded fragments, and publication outputs.</desc>
+  <rect width="1200" height="680" fill="#f8fafc"/>
+  <style>
+    .title{font:700 30px Arial, sans-serif;fill:#0f172a}
+    .subtitle{font:400 15px Arial, sans-serif;fill:#475569}
+    .h{font:700 17px Arial, sans-serif;fill:#0f172a}
+    .b{font:400 14px Arial, sans-serif;fill:#334155}
+    .s{font:400 12px Arial, sans-serif;fill:#64748b}
+    .box{fill:#ffffff;stroke:#cbd5e1;stroke-width:1.4;rx:12}
+    .accent{fill:#e0f2fe;stroke:#0284c7;stroke-width:1.4;rx:12}
+    .gate{fill:#fff7ed;stroke:#ea580c;stroke-width:1.4;rx:12}
+    .out{fill:#ecfdf5;stroke:#059669;stroke-width:1.4;rx:12}
+    .arrow{stroke:#64748b;stroke-width:2;fill:none;marker-end:url(#arrow)}
+    .pill{fill:#f1f5f9;stroke:#cbd5e1;stroke-width:1;rx:9}
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8.5" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L9,3 L0,6 Z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <text x="50" y="50" class="title">nature-comsol-simulation architecture</text>
+  <text x="50" y="76" class="subtitle">A publication-support skill: it links COMSOL/FEA evidence to bounded manuscript claims.</text>
+
+  <rect x="50" y="120" width="235" height="420" class="box"/>
+  <text x="75" y="155" class="h">GitHub lessons studied</text>
+  <rect x="75" y="180" width="185" height="36" class="pill"/>
+  <text x="92" y="203" class="b">Scientific skill taxonomy</text>
+  <rect x="75" y="232" width="185" height="36" class="pill"/>
+  <text x="92" y="255" class="b">COMSOL provenance</text>
+  <rect x="75" y="284" width="185" height="36" class="pill"/>
+  <text x="92" y="307" class="b">CAE tool boundaries</text>
+  <rect x="75" y="336" width="185" height="36" class="pill"/>
+  <text x="92" y="359" class="b">FEM verification</text>
+  <rect x="75" y="388" width="185" height="36" class="pill"/>
+  <text x="92" y="411" class="b">Coupling discipline</text>
+  <rect x="75" y="440" width="185" height="36" class="pill"/>
+  <text x="92" y="463" class="b">Reproducible artifacts</text>
+  <text x="75" y="510" class="s">Examples: MPh, sim-cli, Kratos,</text>
+  <text x="75" y="528" class="s">DOLFINx, SfePy, preCICE,</text>
+  <text x="75" y="546" class="s">OpenRadioss, OpenSees.</text>
+
+  <path d="M285 330 H340" class="arrow"/>
+
+  <rect x="340" y="120" width="230" height="420" class="gate"/>
+  <text x="365" y="155" class="h">Subtraction gate</text>
+  <text x="365" y="190" class="b">Keep</text>
+  <text x="385" y="218" class="s">- manuscript support</text>
+  <text x="385" y="238" class="s">- verification vs validation</text>
+  <text x="385" y="258" class="s">- mesh / solver / BC checks</text>
+  <text x="385" y="278" class="s">- reproducibility package</text>
+  <text x="365" y="325" class="b">Reject</text>
+  <text x="385" y="353" class="s">- full solver execution</text>
+  <text x="385" y="373" class="s">- GUI automation as core</text>
+  <text x="385" y="393" class="s">- generic prose templates</text>
+  <text x="385" y="413" class="s">- fabricated evidence</text>
+  <text x="365" y="474" class="s">Rule: add only features that make</text>
+  <text x="365" y="492" class="s">claims more traceable, bounded,</text>
+  <text x="365" y="510" class="s">and review-resilient.</text>
+
+  <path d="M570 330 H625" class="arrow"/>
+
+  <rect x="625" y="120" width="235" height="420" class="accent"/>
+  <text x="650" y="155" class="h">Router axes</text>
+  <rect x="650" y="185" width="185" height="70" class="pill"/>
+  <text x="668" y="212" class="b">simulation_domain</text>
+  <text x="668" y="235" class="s">solid, contact, thermal, FSI...</text>
+  <rect x="650" y="282" width="185" height="70" class="pill"/>
+  <text x="668" y="309" class="b">model_claim</text>
+  <text x="668" y="332" class="s">stress, deformation, validation...</text>
+  <rect x="650" y="379" width="185" height="70" class="pill"/>
+  <text x="668" y="406" class="b">artifact</text>
+  <text x="668" y="429" class="s">Results, Methods, response...</text>
+  <text x="650" y="496" class="s">The router loads only relevant</text>
+  <text x="650" y="514" class="s">fragments and references.</text>
+
+  <path d="M860 330 H915" class="arrow"/>
+
+  <rect x="915" y="120" width="235" height="420" class="out"/>
+  <text x="940" y="155" class="h">Publication outputs</text>
+  <text x="940" y="194" class="b">Ready-to-use text</text>
+  <text x="960" y="218" class="s">Results / Methods / response</text>
+  <text x="940" y="260" class="b">Claim-evidence map</text>
+  <text x="960" y="284" class="s">supported / suggested / unsupported</text>
+  <text x="940" y="326" class="b">Reviewer-risk flags</text>
+  <text x="960" y="350" class="s">high / medium / low + fixes</text>
+  <text x="940" y="392" class="b">Reproducibility checklist</text>
+  <text x="960" y="416" class="s">.mph, scripts, parameters, logs</text>
+  <text x="940" y="458" class="b">Figure plan</text>
+  <text x="960" y="482" class="s">setup, mesh, extraction, validation</text>
+
+  <rect x="50" y="590" width="1100" height="54" fill="#ffffff" stroke="#cbd5e1" rx="12"/>
+  <text x="75" y="622" class="b">Core promise: do not make the manuscript sound stronger than the simulation evidence.</text>
+</svg>

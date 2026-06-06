@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Example output effect for a COMSOL solid-mechanics Results audit</title>
+  <desc id="desc">Diagram showing user evidence, detected axes, claim-evidence map, ready-to-use result text, and reviewer risk flags.</desc>
+  <rect width="1200" height="760" fill="#f8fafc"/>
+  <style>
+    .title{font:700 28px Arial, sans-serif;fill:#0f172a}
+    .subtitle{font:400 15px Arial, sans-serif;fill:#475569}
+    .h{font:700 17px Arial, sans-serif;fill:#0f172a}
+    .b{font:400 14px Arial, sans-serif;fill:#334155}
+    .s{font:400 12px Arial, sans-serif;fill:#64748b}
+    .tiny{font:400 11px Arial, sans-serif;fill:#64748b}
+    .box{fill:#ffffff;stroke:#cbd5e1;stroke-width:1.3;rx:12}
+    .input{fill:#eff6ff;stroke:#2563eb;stroke-width:1.3;rx:12}
+    .riskHigh{fill:#fee2e2;stroke:#dc2626;stroke-width:1.2;rx:8}
+    .riskMed{fill:#fef3c7;stroke:#d97706;stroke-width:1.2;rx:8}
+    .ok{fill:#dcfce7;stroke:#16a34a;stroke-width:1.2;rx:8}
+    .axis{fill:#e0f2fe;stroke:#0284c7;stroke-width:1.2;rx:8}
+    .arrow{stroke:#64748b;stroke-width:2;fill:none;marker-end:url(#arrow)}
+    .line{stroke:#e2e8f0;stroke-width:1}
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8.5" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L9,3 L0,6 Z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <text x="50" y="48" class="title">Use case: COMSOL porous implant Results audit</text>
+  <text x="50" y="74" class="subtitle">The skill turns incomplete simulation evidence into bounded Results text plus reviewer-risk flags.</text>
+
+  <rect x="50" y="110" width="310" height="280" class="input"/>
+  <text x="75" y="145" class="h">User evidence</text>
+  <text x="75" y="183" class="b">COMSOL Solid Mechanics</text>
+  <text x="75" y="208" class="s">Stationary study</text>
+  <text x="75" y="238" class="b">Two designs</text>
+  <text x="75" y="263" class="s">Baseline vs porous lattice</text>
+  <text x="75" y="293" class="b">Outputs</text>
+  <text x="75" y="318" class="s">von Mises stress + displacement contours</text>
+  <text x="75" y="348" class="b">Known gap</text>
+  <text x="75" y="373" class="s">Mesh convergence monitors displacement only</text>
+
+  <path d="M360 250 H430" class="arrow"/>
+
+  <rect x="430" y="110" width="310" height="280" class="box"/>
+  <text x="455" y="145" class="h">Detected axes</text>
+  <rect x="455" y="175" width="255" height="45" class="axis"/>
+  <text x="475" y="203" class="b">simulation_domain = solid-mechanics</text>
+  <rect x="455" y="240" width="255" height="62" class="axis"/>
+  <text x="475" y="267" class="b">model_claim</text>
+  <text x="475" y="288" class="s">stress-strain, deformation, optimization</text>
+  <rect x="455" y="322" width="255" height="45" class="axis"/>
+  <text x="475" y="350" class="b">artifact = results</text>
+
+  <path d="M740 250 H810" class="arrow"/>
+
+  <rect x="810" y="110" width="340" height="280" class="box"/>
+  <text x="835" y="145" class="h">Claim-evidence map</text>
+  <rect x="835" y="175" width="290" height="48" class="ok"/>
+  <text x="855" y="203" class="b">Supported</text>
+  <text x="945" y="203" class="s">simulated stress/displacement pattern</text>
+  <rect x="835" y="242" width="290" height="48" class="riskMed"/>
+  <text x="855" y="270" class="b">Suggested</text>
+  <text x="945" y="270" class="s">changed load-bearing response</text>
+  <rect x="835" y="309" width="290" height="48" class="riskHigh"/>
+  <text x="855" y="337" class="b">Unsupported</text>
+  <text x="945" y="337" class="s">real failure-risk reduction</text>
+
+  <rect x="50" y="430" width="700" height="210" class="box"/>
+  <text x="75" y="466" class="h">Ready-to-use Results text</text>
+  <text x="75" y="505" class="b">Under the prescribed stationary loading condition, the COMSOL Solid Mechanics model</text>
+  <text x="75" y="528" class="b">predicted a redistribution of the von Mises stress field and a reduction in simulated</text>
+  <text x="75" y="551" class="b">displacement for the porous lattice relative to the baseline geometry.</text>
+  <text x="75" y="586" class="s">Boundary sentence added by the skill:</text>
+  <text x="75" y="610" class="b">A stronger claim of improved failure resistance requires stress-focused mesh</text>
+  <text x="75" y="633" class="b">convergence and validation against the planned compression test.</text>
+
+  <rect x="790" y="430" width="360" height="210" class="box"/>
+  <text x="815" y="466" class="h">Reviewer-risk flags</text>
+  <rect x="815" y="492" width="310" height="40" class="riskHigh"/>
+  <text x="835" y="517" class="b">High: stress claim lacks stress convergence</text>
+  <rect x="815" y="546" width="310" height="40" class="riskHigh"/>
+  <text x="835" y="571" class="b">High: design superiority lacks validation</text>
+  <rect x="815" y="600" width="310" height="40" class="riskMed"/>
+  <text x="835" y="625" class="b">Medium: materials and BCs need sources</text>
+
+  <rect x="50" y="680" width="1100" height="46" fill="#ffffff" stroke="#cbd5e1" rx="12"/>
+  <text x="75" y="709" class="b">Distinctive effect: usable manuscript prose + explicit downgrade of unsupported engineering claims.</text>
+</svg>
