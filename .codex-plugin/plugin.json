@@ -1,0 +1,40 @@
+{
+  "name": "nature-comsol-simulation",
+  "version": "0.1.0",
+  "description": "Nature-style COMSOL/FEA mechanical simulation manuscript writing, Methods reporting, validation, mesh-convergence, and reviewer-risk audit skill.",
+  "author": {
+    "name": "qq570850096",
+    "url": "https://github.com/qq570850096"
+  },
+  "homepage": "https://github.com/qq570850096/nature-comsol-simulation",
+  "repository": "https://github.com/qq570850096/nature-comsol-simulation",
+  "license": "MIT",
+  "keywords": [
+    "nature",
+    "comsol",
+    "finite-element",
+    "simulation",
+    "mechanical-engineering",
+    "mesh-convergence",
+    "validation",
+    "publication"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Nature COMSOL Simulation",
+    "shortDescription": "Audit and write COMSOL/FEA simulation papers",
+    "longDescription": "Use Nature COMSOL Simulation to audit COMSOL and finite-element mechanical simulation manuscripts, write bounded Results and Methods, plan figures, separate verification from validation, report mesh convergence and solver settings, prepare reproducibility checklists, and draft reviewer-response strategy without inventing model evidence.",
+    "developerName": "qq570850096",
+    "category": "Research",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Audit this COMSOL simulation manuscript for mesh convergence and reviewer risk.",
+      "Write a Nature-style Results paragraph for this COMSOL solid-mechanics model, with missing inputs and claim boundaries.",
+      "Check whether this contact-pressure figure supports the claimed wear-reduction mechanism."
+    ]
+  }
+}

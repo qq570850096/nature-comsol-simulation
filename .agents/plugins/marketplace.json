@@ -1,0 +1,20 @@
+{
+  "name": "nature-comsol-simulation",
+  "interface": {
+    "displayName": "Nature COMSOL Simulation"
+  },
+  "plugins": [
+    {
+      "name": "nature-comsol-simulation",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Research"
+    }
+  ]
+}
