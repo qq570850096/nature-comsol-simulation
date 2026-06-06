@@ -4,6 +4,10 @@ This document records the subtraction step. The project does not absorb every
 feature from prior GitHub projects; it keeps only what improves a COMSOL/FEA
 publication skill.
 
+We gratefully acknowledge the projects listed below. They are design
+inspirations, not dependencies or copied sources. See
+[`../ACKNOWLEDGEMENTS.md`](../ACKNOWLEDGEMENTS.md).
+
 ## Absorbed
 
 | Source | Absorbed principle | Implementation in this project |

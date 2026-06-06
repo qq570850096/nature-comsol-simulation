@@ -73,6 +73,14 @@ Detailed notes: [docs/absorbed-and-rejected.md](docs/absorbed-and-rejected.md)
 and
 [skills/nature-comsol-simulation/references/prior-art-design-notes.md](skills/nature-comsol-simulation/references/prior-art-design-notes.md).
 
+## Acknowledgements
+
+We thank the maintainers and contributors of the public GitHub projects that
+inspired this work, including scientific agent skill projects, COMSOL automation
+projects, CAE agent runtimes, and open FEM/multiphysics frameworks. See
+[ACKNOWLEDGEMENTS.md](ACKNOWLEDGEMENTS.md) for the full list and independence
+statement.
+
 ## Install
 
 ### Codex plugin

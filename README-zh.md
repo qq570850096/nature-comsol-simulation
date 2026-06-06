@@ -58,6 +58,10 @@
 
 详细说明见 [docs/absorbed-and-rejected.md](docs/absorbed-and-rejected.md)。
 
+## 鸣谢
+
+感谢这些公开 GitHub 项目的维护者和贡献者。它们在 scientific agent skills、COMSOL 自动化、CAE agent runtime、开源 FEM/多物理场仿真等方面给了本项目重要启发。完整鸣谢和独立性声明见 [ACKNOWLEDGEMENTS.md](ACKNOWLEDGEMENTS.md)。
+
 ## 安装
 
 Codex 插件安装：

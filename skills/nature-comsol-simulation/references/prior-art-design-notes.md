@@ -6,6 +6,11 @@ should be treated as time-sensitive metadata, not permanent facts.
 This skill learns design patterns from public COMSOL and finite-element projects
 without copying project content.
 
+Acknowledgement: the projects listed below are credited as public design
+inspirations. This skill does not copy their code, documentation, datasets,
+model files, trademarks, or branding. See the repository-level
+`ACKNOWLEDGEMENTS.md` for the full acknowledgement statement.
+
 ## COMSOL Automation and Agent Control
 
 | Repository | Snapshot | Design lesson for this skill |
